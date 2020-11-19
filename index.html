@@ -1,0 +1,130 @@
+<!doctype html>
+
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Introdução ao projeto I: Método para descoberta.</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/impress-common.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+
+<!--
+    Caso o navegador utilizado não suporte o impress.js
+-->
+<div class="fallback-message">
+    <p>Possivelmente seu navegador <b>não é compatível com os recursos exigidos</b> pelo impress.js, então você verá uma versão simplificada desta apresentação.</p>
+    <p>Para obter uma melhor experiência, utilize versões mais atualizadas dos navegadores: <b>Chrome</b>, <b>Safari</b> ou <b>Firefox</b>.</p>
+</div>
+
+<!--
+    
+    o tempo de transição é dado em ms
+
+-->
+<div id="impress"
+    data-transition-duration="1000"
+    
+    data-width="1024"
+    data-height="768"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000"
+    
+    data-autoplay="7">
+
+    
+   
+    <div id="titulo" class="step" data-x="0" data-y="0" data-scale="4">
+        <center>
+        <span class="try">Introdução ao Projeto I: </span>
+        <p>
+    
+    
+        
+        <h1><b class="positioning" >Método</b> <b class="positioning" >para</b> <b class="positioning">descoberta</b></h1>
+        </center>
+
+    </div>
+
+
+    <div id="introdução" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <img src="images/1.svg">
+    </div>
+
+    
+
+    <div id="conteudo" class="step" data-x="1000" data-y="3000" data-rotate="180" data-scale="4">
+    
+        <img src="images/2.svg">
+    </div>
+
+    <div id="ideias" class="step" data-x="2825" data-y="2325" data-z="-5000" data-rotate="360" data-scale="1">
+         <img src="images/3.svg">
+    </div>
+
+    
+    <div id="analise" class="step" data-x="3500" data-y="2000" data-z="-5000"  data-rotate="270" data-scale="1">
+    <img src="images/4.svg">
+    
+    </div>
+
+    <div id="beneficios" class="step" data-x="6700" data-y="2000" data-z="-5000"  data-rotate="180" data-scale="1">
+    <img src="images/5.svg">
+        
+    </div>
+
+    <div id="exploração" class="step" data-x="6300" data-y="2000" data-z="-5000" data-rotate="0" data-scale="1">
+        <img src="images/6.svg">
+    </div>
+
+   
+    <div id="conteudo" class="step" data-x="1000" data-y="3000" data-z="0" data-rotate="180" data-scale="4">
+    
+        <img src="images/2.svg">
+    </div>
+
+    <div id="introdução" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <img src="images/1.svg">
+    </div>
+
+</div>
+
+
+<div id="impress-toolbar"></div>
+
+
+<div class="hint">
+    <p>Use a barra de espaço ou as teclas das setas para navegar. <br/> </p>
+    
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+</script>
+
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+</body>
+</html>
